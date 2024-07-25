@@ -8,7 +8,7 @@ app.use(express.json());
 
 // Initialize users with 0 balance, and add user1 with a balance of 5000
 let users = {
-    'user1': { balance: 5000 }, // Example user with non-zero balance
+    'user1': { balance: 150000 }, // Example user with non-zero balance
 };
 
 // Add 100 users with 0 balance
