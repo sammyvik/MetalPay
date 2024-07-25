@@ -1,4 +1,3 @@
-cat <<EOF >package.json
 {
   "name": "metalpay",
   "version": "1.0.0",
@@ -7,8 +6,7 @@ cat <<EOF >package.json
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
   }
 }
-EOF

@@ -34,48 +34,44 @@
         .dashboard button:hover {
             background-color: #218838;
         }
-        .balance {
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
 
 <div class="dashboard">
+    <h3>Dashboard</h3>
+    <div>
+        <label for="user-id">User ID:</label>
+        <input type="text" id="user-id" value="user1" readonly>
+        <label for="current-balance">Current Balance:</label>
+        <input type="text" id="current-balance" readonly>
+    </div>
     <h3>Update Balance</h3>
     <form id="update-balance-form">
-        <label for="user-id">User ID:</label>
-        <input type="text" id="user-id" required>
         <label for="new-balance">New Balance:</label>
         <input type="number" id="new-balance" step="any" required>
         <button type="submit">Update Balance</button>
     </form>
-
-    <div class="balance">
-        <h3>Fetch Balance</h3>
-        <form id="fetch-balance-form">
-            <label for="fetch-user-id">User ID:</label>
-            <input type="text" id="fetch-user-id" required>
-            <button type="submit">Fetch Balance</button>
-        </form>
-        <p id="balance-result"></p>
-    </div>
 </div>
 
 <script>
+    const baseUrl = 'https://<your-vercel-app-url>';
+
+    async function fetchBalance() {
+        const userId = document.getElementById('user-id').value;
+        const response = await fetch(`${baseUrl}/api/balance/${userId}`);
+        const data = await response.json();
+        document.getElementById('current-balance').value = data.balance;
+    }
+
     document.getElementById('update-balance-form').addEventListener('submit', async function(event) {
         event.preventDefault(); // Prevent the default form submission
 
         const userId = document.getElementById('user-id').value;
         const newBalance = document.getElementById('new-balance').value;
 
-        if (!userId || !newBalance) {
-            alert('User ID and Balance are required');
-            return;
-        }
-
         try {
-            const response = await fetch('https://metal-5e63kfg8y-sammy-viks-projects.vercel.app/update-balance/' + userId, {
+            const response = await fetch(`${baseUrl}/api/update-balance/${userId}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -90,38 +86,17 @@
 
             const result = await response.json();
             alert(result.message); // Show success message
+            fetchBalance(); // Refresh the balance
         } catch (error) {
             console.error('Error updating balance: ', error);
             alert('Failed to update balance: ' + error.message);
         }
     });
 
-    document.getElementById('fetch-balance-form').addEventListener('submit', async function(event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        const userId = document.getElementById('fetch-user-id').value;
-
-        if (!userId) {
-            alert('User ID is required');
-            return;
-        }
-
-        try {
-            const response = await fetch('https://metal-5e63kfg8y-sammy-viks-projects.vercel.app/balance/' + userId);
-
-            if (!response.ok) {
-                const errorData = await response.json();
-                throw new Error(errorData.message || 'Network response was not ok');
-            }
-
-            const result = await response.json();
-            document.getElementById('balance-result').textContent = `Balance: ${result.balance}`;
-        } catch (error) {
-            console.error('Error fetching balance: ', error);
-            document.getElementById('balance-result').textContent = 'Failed to fetch balance: ' + error.message;
-        }
-    });
+    // Fetch the initial balance on page load
+    fetchBalance();
 </script>
 
 </body>
 </html>
+
