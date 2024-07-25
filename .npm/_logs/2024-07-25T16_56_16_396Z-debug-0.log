@@ -1,0 +1,166 @@
+0 verbose cli /apex/com.android.runtime/bin/linker64 /data/data/com.termux/files/usr/bin/npm
+1 info using npm@10.8.1
+2 info using node@v22.4.1
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/metalpay/.npmrc
+5 silly config load:file:/data/data/com.termux/files/home/.npmrc
+6 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+7 verbose title npm install dotenv
+8 verbose argv "install" "dotenv"
+9 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2024-07-25T16_56_16_396Z-
+10 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2024-07-25T16_56_16_396Z-debug-0.log
+11 silly packumentCache heap:1098907648 maxSize:274726912 maxEntrySize:137363456
+12 silly logfile start cleaning logs, removing 1 files
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest dotenv@*
+16 silly packumentCache full:https://registry.npmjs.org/dotenv cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/dotenv 1449ms (cache miss)
+18 silly packumentCache full:https://registry.npmjs.org/dotenv set size:undefined disposed:false
+19 silly placeDep ROOT dotenv@16.4.5 OK for: metalpay@1.0.0 want: *
+20 silly reify moves {}
+21 silly audit bulk request {
+21 silly audit   accepts: [ '1.3.8' ],
+21 silly audit   'array-flatten': [ '1.1.1' ],
+21 silly audit   'body-parser': [ '1.20.2' ],
+21 silly audit   bytes: [ '3.1.2' ],
+21 silly audit   'call-bind': [ '1.0.7' ],
+21 silly audit   'content-disposition': [ '0.5.4' ],
+21 silly audit   'content-type': [ '1.0.5' ],
+21 silly audit   cookie: [ '0.6.0' ],
+21 silly audit   'cookie-signature': [ '1.0.6' ],
+21 silly audit   cors: [ '2.8.5' ],
+21 silly audit   debug: [ '2.6.9' ],
+21 silly audit   'define-data-property': [ '1.1.4' ],
+21 silly audit   depd: [ '2.0.0' ],
+21 silly audit   destroy: [ '1.2.0' ],
+21 silly audit   'ee-first': [ '1.1.1' ],
+21 silly audit   encodeurl: [ '1.0.2' ],
+21 silly audit   'es-define-property': [ '1.0.0' ],
+21 silly audit   'es-errors': [ '1.3.0' ],
+21 silly audit   'escape-html': [ '1.0.3' ],
+21 silly audit   etag: [ '1.8.1' ],
+21 silly audit   express: [ '4.19.2' ],
+21 silly audit   finalhandler: [ '1.2.0' ],
+21 silly audit   forwarded: [ '0.2.0' ],
+21 silly audit   fresh: [ '0.5.2' ],
+21 silly audit   'function-bind': [ '1.1.2' ],
+21 silly audit   'get-intrinsic': [ '1.2.4' ],
+21 silly audit   gopd: [ '1.0.1' ],
+21 silly audit   'has-property-descriptors': [ '1.0.2' ],
+21 silly audit   'has-proto': [ '1.0.3' ],
+21 silly audit   'has-symbols': [ '1.0.3' ],
+21 silly audit   hasown: [ '2.0.2' ],
+21 silly audit   'http-errors': [ '2.0.0' ],
+21 silly audit   'iconv-lite': [ '0.4.24' ],
+21 silly audit   inherits: [ '2.0.4' ],
+21 silly audit   'ipaddr.js': [ '1.9.1' ],
+21 silly audit   'media-typer': [ '0.3.0' ],
+21 silly audit   'merge-descriptors': [ '1.0.1' ],
+21 silly audit   methods: [ '1.1.2' ],
+21 silly audit   mime: [ '1.6.0' ],
+21 silly audit   'mime-db': [ '1.52.0' ],
+21 silly audit   'mime-types': [ '2.1.35' ],
+21 silly audit   ms: [ '2.0.0', '2.1.3' ],
+21 silly audit   negotiator: [ '0.6.3' ],
+21 silly audit   'object-assign': [ '4.1.1' ],
+21 silly audit   'object-inspect': [ '1.13.2' ],
+21 silly audit   'on-finished': [ '2.4.1' ],
+21 silly audit   parseurl: [ '1.3.3' ],
+21 silly audit   'path-to-regexp': [ '0.1.7' ],
+21 silly audit   'proxy-addr': [ '2.0.7' ],
+21 silly audit   qs: [ '6.11.0' ],
+21 silly audit   'range-parser': [ '1.2.1' ],
+21 silly audit   'raw-body': [ '2.5.2' ],
+21 silly audit   'safe-buffer': [ '5.2.1' ],
+21 silly audit   'safer-buffer': [ '2.1.2' ],
+21 silly audit   send: [ '0.18.0' ],
+21 silly audit   'serve-static': [ '1.15.0' ],
+21 silly audit   'set-function-length': [ '1.2.2' ],
+21 silly audit   setprototypeof: [ '1.2.0' ],
+21 silly audit   'side-channel': [ '1.0.6' ],
+21 silly audit   statuses: [ '2.0.1' ],
+21 silly audit   toidentifier: [ '1.0.1' ],
+21 silly audit   'type-is': [ '1.6.18' ],
+21 silly audit   unpipe: [ '1.0.0' ],
+21 silly audit   'utils-merge': [ '1.0.1' ],
+21 silly audit   vary: [ '1.1.2' ],
+21 silly audit   dotenv: [ '16.4.5' ]
+21 silly audit }
+22 silly tarball no local data for dotenv@https://registry.npmjs.org/dotenv/-/dotenv-16.4.5.tgz. Extracting by manifest.
+23 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 655ms
+24 silly audit report {}
+25 http fetch GET 200 https://registry.npmjs.org/dotenv/-/dotenv-16.4.5.tgz 815ms (cache miss)
+26 silly ADD node_modules/dotenv
+27 silly ADD node_modules/vary
+28 silly ADD node_modules/utils-merge
+29 silly ADD node_modules/unpipe
+30 silly ADD node_modules/type-is
+31 silly ADD node_modules/toidentifier
+32 silly ADD node_modules/statuses
+33 silly ADD node_modules/side-channel
+34 silly ADD node_modules/setprototypeof
+35 silly ADD node_modules/set-function-length
+36 silly ADD node_modules/serve-static
+37 silly ADD node_modules/send
+38 silly ADD node_modules/send/node_modules/ms
+39 silly ADD node_modules/safer-buffer
+40 silly ADD node_modules/safe-buffer
+41 silly ADD node_modules/raw-body
+42 silly ADD node_modules/range-parser
+43 silly ADD node_modules/qs
+44 silly ADD node_modules/proxy-addr
+45 silly ADD node_modules/path-to-regexp
+46 silly ADD node_modules/parseurl
+47 silly ADD node_modules/on-finished
+48 silly ADD node_modules/object-inspect
+49 silly ADD node_modules/object-assign
+50 silly ADD node_modules/negotiator
+51 silly ADD node_modules/ms
+52 silly ADD node_modules/mime-types
+53 silly ADD node_modules/mime-db
+54 silly ADD node_modules/mime
+55 silly ADD node_modules/methods
+56 silly ADD node_modules/merge-descriptors
+57 silly ADD node_modules/media-typer
+58 silly ADD node_modules/ipaddr.js
+59 silly ADD node_modules/inherits
+60 silly ADD node_modules/iconv-lite
+61 silly ADD node_modules/http-errors
+62 silly ADD node_modules/hasown
+63 silly ADD node_modules/has-symbols
+64 silly ADD node_modules/has-proto
+65 silly ADD node_modules/has-property-descriptors
+66 silly ADD node_modules/gopd
+67 silly ADD node_modules/get-intrinsic
+68 silly ADD node_modules/function-bind
+69 silly ADD node_modules/fresh
+70 silly ADD node_modules/forwarded
+71 silly ADD node_modules/finalhandler
+72 silly ADD node_modules/express
+73 silly ADD node_modules/etag
+74 silly ADD node_modules/escape-html
+75 silly ADD node_modules/es-errors
+76 silly ADD node_modules/es-define-property
+77 silly ADD node_modules/encodeurl
+78 silly ADD node_modules/ee-first
+79 silly ADD node_modules/destroy
+80 silly ADD node_modules/depd
+81 silly ADD node_modules/define-data-property
+82 silly ADD node_modules/debug
+83 silly ADD node_modules/cors
+84 silly ADD node_modules/cookie-signature
+85 silly ADD node_modules/cookie
+86 silly ADD node_modules/content-type
+87 silly ADD node_modules/content-disposition
+88 silly ADD node_modules/call-bind
+89 silly ADD node_modules/bytes
+90 silly ADD node_modules/body-parser
+91 silly ADD node_modules/array-flatten
+92 silly ADD node_modules/accepts
+93 verbose cwd /data/data/com.termux/files/home/metalpay
+94 verbose os Linux 4.19.191-g35c8106c5598-dirty
+95 verbose node v22.4.1
+96 verbose npm  v10.8.1
+97 verbose exit 0
+98 info ok

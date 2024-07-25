@@ -1,0 +1,372 @@
+0 verbose cli /apex/com.android.runtime/bin/linker64 /data/data/com.termux/files/usr/bin/npm
+1 info using npm@10.8.1
+2 info using node@v22.4.1
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm install faunadb
+7 verbose argv "install" "faunadb"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2024-07-25T19_22_11_400Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2024-07-25T19_22_11_400Z-debug-0.log
+10 silly packumentCache heap:1098907648 maxSize:274726912 maxEntrySize:137363456
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly fetch manifest faunadb@*
+15 silly packumentCache full:https://registry.npmjs.org/faunadb cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/faunadb 6065ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/faunadb set size:undefined disposed:false
+18 silly placeDep ROOT faunadb@4.8.0 OK for:  want: *
+19 silly fetch manifest boxen@^5.0.1
+20 silly packumentCache full:https://registry.npmjs.org/boxen cache-miss
+21 silly fetch manifest btoa-lite@^1.0.0
+22 silly packumentCache full:https://registry.npmjs.org/btoa-lite cache-miss
+23 silly fetch manifest chalk@^4.1.1
+24 silly packumentCache full:https://registry.npmjs.org/chalk cache-miss
+25 silly fetch manifest cross-fetch@^3.1.5
+26 silly packumentCache full:https://registry.npmjs.org/cross-fetch cache-miss
+27 silly fetch manifest dotenv@^8.2.0
+28 silly packumentCache full:https://registry.npmjs.org/dotenv cache-miss
+29 silly fetch manifest fn-annotate@^1.1.3
+30 silly packumentCache full:https://registry.npmjs.org/fn-annotate cache-miss
+31 silly fetch manifest node-abort-controller@^3.0.1
+32 silly packumentCache full:https://registry.npmjs.org/node-abort-controller cache-miss
+33 http fetch GET 200 https://registry.npmjs.org/boxen 231ms (cache miss)
+34 silly packumentCache full:https://registry.npmjs.org/boxen set size:undefined disposed:false
+35 http fetch GET 200 https://registry.npmjs.org/node-abort-controller 722ms (cache miss)
+36 silly packumentCache full:https://registry.npmjs.org/node-abort-controller set size:undefined disposed:false
+37 http fetch GET 200 https://registry.npmjs.org/dotenv 863ms (cache revalidated)
+38 silly packumentCache full:https://registry.npmjs.org/dotenv set size:296954 disposed:false
+39 http fetch GET 200 https://registry.npmjs.org/chalk 901ms (cache miss)
+40 silly packumentCache full:https://registry.npmjs.org/chalk set size:undefined disposed:false
+41 http fetch GET 200 https://registry.npmjs.org/btoa-lite 1609ms (cache miss)
+42 silly packumentCache full:https://registry.npmjs.org/btoa-lite set size:undefined disposed:false
+43 http fetch GET 200 https://registry.npmjs.org/fn-annotate 1603ms (cache miss)
+44 silly packumentCache full:https://registry.npmjs.org/fn-annotate set size:undefined disposed:false
+45 http fetch GET 200 https://registry.npmjs.org/cross-fetch 3027ms (cache miss)
+46 silly packumentCache full:https://registry.npmjs.org/cross-fetch set size:undefined disposed:false
+47 silly placeDep ROOT boxen@5.1.2 OK for: faunadb@4.8.0 want: ^5.0.1
+48 silly placeDep ROOT btoa-lite@1.0.0 OK for: faunadb@4.8.0 want: ^1.0.0
+49 silly placeDep ROOT chalk@4.1.2 OK for: faunadb@4.8.0 want: ^4.1.1
+50 silly placeDep ROOT cross-fetch@3.1.8 OK for: faunadb@4.8.0 want: ^3.1.5
+51 silly placeDep ROOT dotenv@8.6.0 OK for: faunadb@4.8.0 want: ^8.2.0
+52 silly placeDep ROOT fn-annotate@1.2.0 OK for: faunadb@4.8.0 want: ^1.1.3
+53 silly placeDep ROOT node-abort-controller@3.1.1 OK for: faunadb@4.8.0 want: ^3.0.1
+54 silly fetch manifest chalk@^4.1.0
+55 silly packumentCache full:https://registry.npmjs.org/chalk cache-miss
+56 silly fetch manifest camelcase@^6.2.0
+57 silly packumentCache full:https://registry.npmjs.org/camelcase cache-miss
+58 silly fetch manifest cli-boxes@^2.2.1
+59 silly packumentCache full:https://registry.npmjs.org/cli-boxes cache-miss
+60 silly fetch manifest type-fest@^0.20.2
+61 silly packumentCache full:https://registry.npmjs.org/type-fest cache-miss
+62 silly fetch manifest ansi-align@^3.0.0
+63 silly packumentCache full:https://registry.npmjs.org/ansi-align cache-miss
+64 silly fetch manifest widest-line@^3.1.0
+65 silly packumentCache full:https://registry.npmjs.org/widest-line cache-miss
+66 silly fetch manifest supports-color@^7.1.0
+67 silly packumentCache full:https://registry.npmjs.org/supports-color cache-miss
+68 http fetch GET 200 https://registry.npmjs.org/chalk 91ms (cache hit)
+69 silly packumentCache full:https://registry.npmjs.org/chalk set size:141442 disposed:false
+70 http fetch GET 200 https://registry.npmjs.org/widest-line 232ms (cache miss)
+71 silly packumentCache full:https://registry.npmjs.org/widest-line set size:undefined disposed:false
+72 http fetch GET 200 https://registry.npmjs.org/ansi-align 554ms (cache miss)
+73 silly packumentCache full:https://registry.npmjs.org/ansi-align set size:undefined disposed:false
+74 http fetch GET 200 https://registry.npmjs.org/cli-boxes 752ms (cache miss)
+75 silly packumentCache full:https://registry.npmjs.org/cli-boxes set size:undefined disposed:false
+76 http fetch GET 200 https://registry.npmjs.org/supports-color 978ms (cache miss)
+77 silly packumentCache full:https://registry.npmjs.org/supports-color set size:undefined disposed:false
+78 http fetch GET 200 https://registry.npmjs.org/type-fest 1027ms (cache miss)
+79 silly packumentCache full:https://registry.npmjs.org/type-fest set size:undefined disposed:false
+80 http fetch GET 200 https://registry.npmjs.org/camelcase 1167ms (cache miss)
+81 silly packumentCache full:https://registry.npmjs.org/camelcase set size:undefined disposed:false
+82 silly placeDep ROOT ansi-align@3.0.1 OK for: boxen@5.1.2 want: ^3.0.0
+83 silly placeDep ROOT camelcase@6.3.0 OK for: boxen@5.1.2 want: ^6.2.0
+84 silly placeDep ROOT cli-boxes@2.2.1 OK for: boxen@5.1.2 want: ^2.2.1
+85 silly placeDep ROOT type-fest@0.20.2 OK for: boxen@5.1.2 want: ^0.20.2
+86 silly placeDep ROOT widest-line@3.1.0 OK for: boxen@5.1.2 want: ^3.1.0
+87 silly placeDep ROOT supports-color@7.2.0 OK for: chalk@4.1.2 want: ^7.1.0
+88 silly fetch manifest has-flag@^4.0.0
+89 silly packumentCache full:https://registry.npmjs.org/has-flag cache-miss
+90 http fetch GET 200 https://registry.npmjs.org/has-flag 188ms (cache miss)
+91 silly packumentCache full:https://registry.npmjs.org/has-flag set size:undefined disposed:false
+92 silly placeDep ROOT has-flag@4.0.0 OK for: supports-color@7.2.0 want: ^4.0.0
+93 silly reify moves {}
+94 silly audit bulk request {
+94 silly audit   '@fastify/busboy': [ '2.1.1' ],
+94 silly audit   '@firebase/app-check-interop-types': [ '0.3.2' ],
+94 silly audit   '@firebase/app-types': [ '0.9.2' ],
+94 silly audit   '@firebase/auth-interop-types': [ '0.2.3' ],
+94 silly audit   '@firebase/component': [ '0.6.8' ],
+94 silly audit   '@firebase/database': [ '1.0.6' ],
+94 silly audit   '@firebase/database-compat': [ '1.0.6' ],
+94 silly audit   '@firebase/database-types': [ '1.0.4' ],
+94 silly audit   '@firebase/logger': [ '0.4.2' ],
+94 silly audit   '@firebase/util': [ '1.9.7' ],
+94 silly audit   '@google-cloud/firestore': [ '7.9.0' ],
+94 silly audit   '@google-cloud/paginator': [ '5.0.2' ],
+94 silly audit   '@google-cloud/projectify': [ '4.0.0' ],
+94 silly audit   '@google-cloud/promisify': [ '4.0.0' ],
+94 silly audit   '@google-cloud/storage': [ '7.12.0' ],
+94 silly audit   mime: [ '3.0.0', '1.6.0' ],
+94 silly audit   uuid: [ '8.3.2', '9.0.1', '10.0.0' ],
+94 silly audit   '@grpc/grpc-js': [ '1.11.1' ],
+94 silly audit   '@grpc/proto-loader': [ '0.7.13' ],
+94 silly audit   '@js-sdsl/ordered-map': [ '4.4.2' ],
+94 silly audit   '@protobufjs/aspromise': [ '1.1.2' ],
+94 silly audit   '@protobufjs/base64': [ '1.1.2' ],
+94 silly audit   '@protobufjs/codegen': [ '2.0.4' ],
+94 silly audit   '@protobufjs/eventemitter': [ '1.1.0' ],
+94 silly audit   '@protobufjs/fetch': [ '1.1.0' ],
+94 silly audit   '@protobufjs/float': [ '1.0.2' ],
+94 silly audit   '@protobufjs/inquire': [ '1.1.0' ],
+94 silly audit   '@protobufjs/path': [ '1.1.2' ],
+94 silly audit   '@protobufjs/pool': [ '1.1.0' ],
+94 silly audit   '@protobufjs/utf8': [ '1.1.0' ],
+94 silly audit   '@tootallnate/once': [ '2.0.0' ],
+94 silly audit   '@types/body-parser': [ '1.19.5' ],
+94 silly audit   '@types/caseless': [ '0.12.5' ],
+94 silly audit   '@types/connect': [ '3.4.38' ],
+94 silly audit   '@types/express': [ '4.17.21' ],
+94 silly audit   '@types/express-serve-static-core': [ '4.19.5' ],
+94 silly audit   '@types/http-errors': [ '2.0.4' ],
+94 silly audit   '@types/jsonwebtoken': [ '9.0.6' ],
+94 silly audit   '@types/long': [ '4.0.2' ],
+94 silly audit   '@types/mime': [ '1.3.5' ],
+94 silly audit   '@types/node': [ '20.14.12' ],
+94 silly audit   '@types/qs': [ '6.9.15' ],
+94 silly audit   '@types/range-parser': [ '1.2.7' ],
+94 silly audit   '@types/request': [ '2.48.12' ],
+94 silly audit   '@types/send': [ '0.17.4' ],
+94 silly audit   '@types/serve-static': [ '1.15.7' ],
+94 silly audit   '@types/tough-cookie': [ '4.0.5' ],
+94 silly audit   'abort-controller': [ '3.0.0' ],
+94 silly audit   accepts: [ '1.3.8' ],
+94 silly audit   'agent-base': [ '7.1.1', '6.0.2' ],
+94 silly audit   debug: [ '4.3.5', '2.6.9' ],
+94 silly audit   ms: [ '2.1.2', '2.1.3', '2.0.0' ],
+94 silly audit   'ansi-regex': [ '5.0.1' ],
+94 silly audit   'ansi-styles': [ '4.3.0' ],
+94 silly audit   'array-flatten': [ '1.1.1' ],
+94 silly audit   arrify: [ '2.0.1' ],
+94 silly audit   'async-retry': [ '1.3.3' ],
+94 silly audit   asynckit: [ '0.4.0' ],
+94 silly audit   'base64-js': [ '1.5.1' ],
+94 silly audit   'bignumber.js': [ '9.1.2' ],
+94 silly audit   'body-parser': [ '1.20.2' ],
+94 silly audit   'buffer-equal-constant-time': [ '1.0.1' ],
+94 silly audit   bytes: [ '3.1.2' ],
+94 silly audit   'call-bind': [ '1.0.7' ],
+94 silly audit   cliui: [ '8.0.1' ],
+94 silly audit   'color-convert': [ '2.0.1' ],
+94 silly audit   'color-name': [ '1.1.4' ],
+94 silly audit   'combined-stream': [ '1.0.8' ],
+94 silly audit   'content-disposition': [ '0.5.4' ],
+94 silly audit   'content-type': [ '1.0.5' ],
+94 silly audit   cookie: [ '0.6.0' ],
+94 silly audit   'cookie-signature': [ '1.0.6' ],
+94 silly audit   cors: [ '2.8.5' ],
+94 silly audit   'define-data-property': [ '1.1.4' ],
+94 silly audit   'delayed-stream': [ '1.0.0' ],
+94 silly audit   depd: [ '2.0.0' ],
+94 silly audit   destroy: [ '1.2.0' ],
+94 silly audit   duplexify: [ '4.1.3' ],
+94 silly audit   'ecdsa-sig-formatter': [ '1.0.11' ],
+94 silly audit   'ee-first': [ '1.1.1' ],
+94 silly audit   'emoji-regex': [ '8.0.0' ],
+94 silly audit   encodeurl: [ '1.0.2' ],
+94 silly audit   'end-of-stream': [ '1.4.4' ],
+94 silly audit   'es-define-property': [ '1.0.0' ],
+94 silly audit   'es-errors': [ '1.3.0' ],
+94 silly audit   escalade: [ '3.1.2' ],
+94 silly audit   'escape-html': [ '1.0.3' ],
+94 silly audit   etag: [ '1.8.1' ],
+94 silly audit   'event-target-shim': [ '5.0.1' ],
+94 silly audit   express: [ '4.19.2' ],
+94 silly audit   extend: [ '3.0.2' ],
+94 silly audit   'farmhash-modern': [ '1.1.0' ],
+94 silly audit   'fast-deep-equal': [ '3.1.3' ],
+94 silly audit   'fast-xml-parser': [ '4.4.0' ],
+94 silly audit   'faye-websocket': [ '0.11.4' ],
+94 silly audit   finalhandler: [ '1.2.0' ],
+94 silly audit   'firebase-admin': [ '12.2.0' ],
+94 silly audit   'form-data': [ '2.5.1' ],
+94 silly audit   forwarded: [ '0.2.0' ],
+94 silly audit   fresh: [ '0.5.2' ],
+94 silly audit   'function-bind': [ '1.1.2' ],
+94 silly audit   'functional-red-black-tree': [ '1.0.1' ],
+94 silly audit   gaxios: [ '6.7.0' ],
+94 silly audit   'gcp-metadata': [ '6.1.0' ],
+94 silly audit   'get-caller-file': [ '2.0.5' ],
+94 silly audit   'get-intrinsic': [ '1.2.4' ],
+94 silly audit   'google-auth-library': [ '9.11.0' ],
+94 silly audit   'google-gax': [ '4.3.8' ],
+94 silly audit   gopd: [ '1.0.1' ],
+94 silly audit   gtoken: [ '7.1.0' ],
+94 silly audit   'has-property-descriptors': [ '1.0.2' ],
+94 silly audit   'has-proto': [ '1.0.3' ],
+94 silly audit   'has-symbols': [ '1.0.3' ],
+94 silly audit   hasown: [ '2.0.2' ],
+94 silly audit   'html-entities': [ '2.5.2' ],
+94 silly audit   'http-errors': [ '2.0.0' ],
+94 silly audit   'http-parser-js': [ '0.5.8' ],
+94 silly audit   'http-proxy-agent': [ '5.0.0' ],
+94 silly audit   'https-proxy-agent': [ '7.0.5', '5.0.1' ],
+94 silly audit   'iconv-lite': [ '0.4.24' ],
+94 silly audit   inherits: [ '2.0.4' ],
+94 silly audit   'ipaddr.js': [ '1.9.1' ],
+94 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+94 silly audit   'is-stream': [ '2.0.1' ],
+94 silly audit   jose: [ '4.15.9' ],
+94 silly audit   'json-bigint': [ '1.0.0' ],
+94 silly audit   jsonwebtoken: [ '9.0.2' ],
+94 silly audit   jwa: [ '1.4.1', '2.0.0' ],
+94 silly audit   jws: [ '3.2.2', '4.0.0' ],
+94 silly audit   'jwks-rsa': [ '3.1.0' ],
+94 silly audit   limiter: [ '1.1.5' ],
+94 silly audit   'lodash.camelcase': [ '4.3.0' ],
+94 silly audit   'lodash.clonedeep': [ '4.5.0' ],
+94 silly audit   'lodash.includes': [ '4.3.0' ],
+94 silly audit   'lodash.isboolean': [ '3.0.3' ],
+94 silly audit   'lodash.isinteger': [ '4.0.4' ],
+94 silly audit   'lodash.isnumber': [ '3.0.3' ],
+94 silly audit   'lodash.isplainobject': [ '4.0.6' ],
+94 silly audit   'lodash.isstring': [ '4.0.1' ],
+94 silly audit   'lodash.once': [ '4.1.1' ],
+94 silly audit   long: [ '5.2.3' ],
+94 silly audit   'lru-cache': [ '6.0.0' ],
+94 silly audit   'lru-memoizer': [ '2.3.0' ],
+94 silly audit   'media-typer': [ '0.3.0' ],
+94 silly audit   'merge-descriptors': [ '1.0.1' ],
+94 silly audit   methods: [ '1.1.2' ],
+94 silly audit   'mime-db': [ '1.52.0' ],
+94 silly audit   'mime-types': [ '2.1.35' ],
+94 silly audit   negotiator: [ '0.6.3' ],
+94 silly audit   'node-fetch': [ '2.7.0' ],
+94 silly audit   'node-forge': [ '1.3.1' ],
+94 silly audit   'object-assign': [ '4.1.1' ],
+94 silly audit   'object-hash': [ '3.0.0' ],
+94 silly audit   'object-inspect': [ '1.13.2' ],
+94 silly audit   'on-finished': [ '2.4.1' ],
+94 silly audit   once: [ '1.4.0' ],
+94 silly audit   'p-limit': [ '3.1.0' ],
+94 silly audit   parseurl: [ '1.3.3' ],
+94 silly audit   'path-to-regexp': [ '0.1.7' ],
+94 silly audit   'proto3-json-serializer': [ '2.0.2' ],
+94 silly audit   protobufjs: [ '7.3.2' ],
+94 silly audit   'proxy-addr': [ '2.0.7' ],
+94 silly audit   qs: [ '6.11.0' ],
+94 silly audit   'range-parser': [ '1.2.1' ],
+94 silly audit   'raw-body': [ '2.5.2' ],
+94 silly audit   'readable-stream': [ '3.6.2' ],
+94 silly audit   'require-directory': [ '2.1.1' ],
+94 silly audit   retry: [ '0.13.1' ],
+94 silly audit   'retry-request': [ '7.0.2' ],
+94 silly audit   'safe-buffer': [ '5.2.1' ],
+94 silly audit   'safer-buffer': [ '2.1.2' ],
+94 silly audit   semver: [ '7.6.3' ],
+94 silly audit   send: [ '0.18.0' ],
+94 silly audit   'serve-static': [ '1.15.0' ],
+94 silly audit   'set-function-length': [ '1.2.2' ],
+94 silly audit   setprototypeof: [ '1.2.0' ],
+94 silly audit   'side-channel': [ '1.0.6' ],
+94 silly audit   statuses: [ '2.0.1' ],
+94 silly audit   'stream-events': [ '1.0.5' ],
+94 silly audit   'stream-shift': [ '1.0.3' ],
+94 silly audit   string_decoder: [ '1.3.0' ],
+94 silly audit   'string-width': [ '4.2.3' ],
+94 silly audit   'strip-ansi': [ '6.0.1' ],
+94 silly audit   strnum: [ '1.0.5' ],
+94 silly audit   stubs: [ '3.0.0' ],
+94 silly audit   'teeny-request': [ '9.0.0' ],
+94 silly audit   toidentifier: [ '1.0.1' ],
+94 silly audit   tr46: [ '0.0.3' ],
+94 silly audit   tslib: [ '2.6.3' ],
+94 silly audit   'type-is': [ '1.6.18' ],
+94 silly audit   'undici-types': [ '5.26.5' ],
+94 silly audit   unpipe: [ '1.0.0' ],
+94 silly audit   'util-deprecate': [ '1.0.2' ],
+94 silly audit   'utils-merge': [ '1.0.1' ],
+94 silly audit   vary: [ '1.1.2' ],
+94 silly audit   'webidl-conversions': [ '3.0.1' ],
+94 silly audit   'websocket-driver': [ '0.7.4' ],
+94 silly audit   'websocket-extensions': [ '0.1.4' ],
+94 silly audit   'whatwg-url': [ '5.0.0' ],
+94 silly audit   'wrap-ansi': [ '7.0.0' ],
+94 silly audit   wrappy: [ '1.0.2' ],
+94 silly audit   y18n: [ '5.0.8' ],
+94 silly audit   yallist: [ '4.0.0' ],
+94 silly audit   yargs: [ '17.7.2' ],
+94 silly audit   'yargs-parser': [ '21.1.1' ],
+94 silly audit   'yocto-queue': [ '0.1.0' ],
+94 silly audit   faunadb: [ '4.8.0' ],
+94 silly audit   boxen: [ '5.1.2' ],
+94 silly audit   'btoa-lite': [ '1.0.0' ],
+94 silly audit   chalk: [ '4.1.2' ],
+94 silly audit   'cross-fetch': [ '3.1.8' ],
+94 silly audit   dotenv: [ '8.6.0' ],
+94 silly audit   'fn-annotate': [ '1.2.0' ],
+94 silly audit   'node-abort-controller': [ '3.1.1' ],
+94 silly audit   'ansi-align': [ '3.0.1' ],
+94 silly audit   camelcase: [ '6.3.0' ],
+94 silly audit   'cli-boxes': [ '2.2.1' ],
+94 silly audit   'type-fest': [ '0.20.2' ],
+94 silly audit   'widest-line': [ '3.1.0' ],
+94 silly audit   'supports-color': [ '7.2.0' ],
+94 silly audit   'has-flag': [ '4.0.0' ]
+94 silly audit }
+95 silly tarball no local data for widest-line@https://registry.npmjs.org/widest-line/-/widest-line-3.1.0.tgz. Extracting by manifest.
+96 silly tarball no local data for supports-color@https://registry.npmjs.org/supports-color/-/supports-color-7.2.0.tgz. Extracting by manifest.
+97 silly tarball no local data for ansi-align@https://registry.npmjs.org/ansi-align/-/ansi-align-3.0.1.tgz. Extracting by manifest.
+98 silly tarball no local data for cli-boxes@https://registry.npmjs.org/cli-boxes/-/cli-boxes-2.2.1.tgz. Extracting by manifest.
+99 silly tarball no local data for camelcase@https://registry.npmjs.org/camelcase/-/camelcase-6.3.0.tgz. Extracting by manifest.
+100 silly tarball no local data for type-fest@https://registry.npmjs.org/type-fest/-/type-fest-0.20.2.tgz. Extracting by manifest.
+101 silly tarball no local data for has-flag@https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz. Extracting by manifest.
+102 silly tarball no local data for node-abort-controller@https://registry.npmjs.org/node-abort-controller/-/node-abort-controller-3.1.1.tgz. Extracting by manifest.
+103 silly tarball no local data for fn-annotate@https://registry.npmjs.org/fn-annotate/-/fn-annotate-1.2.0.tgz. Extracting by manifest.
+104 silly tarball no local data for dotenv@https://registry.npmjs.org/dotenv/-/dotenv-8.6.0.tgz. Extracting by manifest.
+105 silly tarball no local data for btoa-lite@https://registry.npmjs.org/btoa-lite/-/btoa-lite-1.0.0.tgz. Extracting by manifest.
+106 silly tarball no local data for cross-fetch@https://registry.npmjs.org/cross-fetch/-/cross-fetch-3.1.8.tgz. Extracting by manifest.
+107 silly tarball no local data for chalk@https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz. Extracting by manifest.
+108 silly tarball no local data for boxen@https://registry.npmjs.org/boxen/-/boxen-5.1.2.tgz. Extracting by manifest.
+109 silly tarball no local data for faunadb@https://registry.npmjs.org/faunadb/-/faunadb-4.8.0.tgz. Extracting by manifest.
+110 http fetch GET 200 https://registry.npmjs.org/widest-line/-/widest-line-3.1.0.tgz 371ms (cache miss)
+111 http fetch GET 200 https://registry.npmjs.org/supports-color/-/supports-color-7.2.0.tgz 368ms (cache miss)
+112 http fetch GET 200 https://registry.npmjs.org/cli-boxes/-/cli-boxes-2.2.1.tgz 366ms (cache miss)
+113 http fetch GET 200 https://registry.npmjs.org/ansi-align/-/ansi-align-3.0.1.tgz 371ms (cache miss)
+114 http fetch GET 200 https://registry.npmjs.org/camelcase/-/camelcase-6.3.0.tgz 374ms (cache miss)
+115 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 531ms
+116 silly audit report {}
+117 http fetch GET 200 https://registry.npmjs.org/type-fest/-/type-fest-0.20.2.tgz 481ms (cache miss)
+118 http fetch GET 200 https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz 790ms (cache miss)
+119 http fetch GET 200 https://registry.npmjs.org/btoa-lite/-/btoa-lite-1.0.0.tgz 797ms (cache miss)
+120 http fetch GET 200 https://registry.npmjs.org/node-abort-controller/-/node-abort-controller-3.1.1.tgz 809ms (cache miss)
+121 http fetch GET 200 https://registry.npmjs.org/boxen/-/boxen-5.1.2.tgz 798ms (cache miss)
+122 http fetch GET 200 https://registry.npmjs.org/dotenv/-/dotenv-8.6.0.tgz 808ms (cache miss)
+123 http fetch GET 200 https://registry.npmjs.org/cross-fetch/-/cross-fetch-3.1.8.tgz 819ms (cache miss)
+124 http fetch GET 200 https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz 854ms (cache miss)
+125 http fetch GET 200 https://registry.npmjs.org/fn-annotate/-/fn-annotate-1.2.0.tgz 988ms (cache miss)
+126 http fetch GET 200 https://registry.npmjs.org/faunadb/-/faunadb-4.8.0.tgz 3689ms (cache miss)
+127 info run faunadb@4.8.0 postinstall node_modules/faunadb node ./tools/printReleaseNotes
+128 info run faunadb@4.8.0 postinstall { code: 0, signal: null }
+129 silly ADD node_modules/has-flag
+130 silly ADD node_modules/supports-color
+131 silly ADD node_modules/widest-line
+132 silly ADD node_modules/type-fest
+133 silly ADD node_modules/cli-boxes
+134 silly ADD node_modules/camelcase
+135 silly ADD node_modules/ansi-align
+136 silly ADD node_modules/node-abort-controller
+137 silly ADD node_modules/fn-annotate
+138 silly ADD node_modules/dotenv
+139 silly ADD node_modules/cross-fetch
+140 silly ADD node_modules/chalk
+141 silly ADD node_modules/btoa-lite
+142 silly ADD node_modules/boxen
+143 silly ADD node_modules/faunadb
+144 verbose cwd /data/data/com.termux/files/home
+145 verbose os Linux 4.19.191-g35c8106c5598-dirty
+146 verbose node v22.4.1
+147 verbose npm  v10.8.1
+148 verbose exit 0
+149 info ok

@@ -1,0 +1,40 @@
+0 verbose cli /apex/com.android.runtime/bin/linker64 /data/data/com.termux/files/usr/bin/npm
+1 info using npm@10.8.1
+2 info using node@v22.4.1
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm init
+7 verbose argv "init" "--yes"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2024-07-25T20_45_19_910Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2024-07-25T20_45_19_910Z-debug-0.log
+10 silly logfile start cleaning logs, removing 1 files
+11 silly logfile done cleaning log files
+12 silly package data {
+12 silly package data   dependencies: {
+12 silly package data     cors: '^2.8.5',
+12 silly package data     express: '^4.19.2',
+12 silly package data     faunadb: '^4.8.0',
+12 silly package data     'firebase-admin': '^12.3.0'
+12 silly package data   },
+12 silly package data   name: 'home',
+12 silly package data   version: '1.0.0',
+12 silly package data   main: 'firebase.js',
+12 silly package data   devDependencies: {},
+12 silly package data   scripts: {
+12 silly package data     test: 'echo "Error: no test specified" && exit 1',
+12 silly package data     start: 'node server.js'
+12 silly package data   },
+12 silly package data   keywords: [],
+12 silly package data   author: '',
+12 silly package data   license: 'ISC',
+12 silly package data   description: '',
+12 silly package data   [Symbol(newline)]: '\n',
+12 silly package data   [Symbol(indent)]: '  '
+12 silly package data }
+13 verbose cwd /data/data/com.termux/files/home
+14 verbose os Linux 4.19.191-g35c8106c5598-dirty
+15 verbose node v22.4.1
+16 verbose npm  v10.8.1
+17 verbose exit 0
+18 info ok
