@@ -1,9 +1,6 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "metalscript.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "/.*", "dest": "metalscript.js" }
+  "rewrites": [
+    { "source": "/api/update-balance/:userId", "destination": "/api/update-balance.js" },
+    { "source": "/api/balance/:userId", "destination": "/api/balance.js" }
   ]
 }
