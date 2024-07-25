@@ -16,4 +16,15 @@
   "author": "",
   "license": "ISC",
   "description": ""
+  "name": "metalpay",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.17.1"
+  }
 }

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/update-balance.js", "use": "@vercel/node" },
+    { "src": "api/balance.js", "use": "@vercel/node" },
+    { "src": "firebase.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/update-balance/(.*)", "dest": "/api/update-balance.js" },
+    { "src": "/api/balance/(.*)", "dest": "/api/balance.js" }
+  ]
+}
+

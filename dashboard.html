@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        .dashboard {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            width: 300px;
+            margin: auto;
+        }
+        .dashboard label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .dashboard input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .dashboard button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .dashboard button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dashboard">
+    <h3>Dashboard</h3>
+    <div>
+        <label for="user-id">User ID:</label>
+        <input type="text" id="user-id" value="user1" readonly>
+        <label for="current-balance">Current Balance:</label>
+        <input type="text" id="current-balance" readonly>
+    </div>
+    <h3>Update Balance</h3>
+    <form id="update-balance-form">
+        <label for="new-balance">New Balance:</label>
+        <input type="number" id="new-balance" step="any" required>
+        <button type="submit">Update Balance</button>
+    </form>
+</div>
+
+<script>
+    const baseUrl = 'https://<your-vercel-app-url>';
+
+    async function fetchBalance() {
+        const userId = document.getElementById('user-id').value;
+        const response = await fetch(`${baseUrl}/api/balance/${userId}`);
+        const data = await response.json();
+        document.getElementById('current-balance').value = data.balance;
+    }
+
+    document.getElementById('update-balance-form').addEventListener('submit', async function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const userId = document.getElementById('user-id').value;
+        const newBalance = document.getElementById('new-balance').value;
+
+        try {
+            const response = await fetch(`${baseUrl}/api/update-balance/${userId}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ amount: parseFloat(newBalance) }),
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.message || 'Network response was not ok');
+            }
+
+            const result = await response.json();
+            alert(result.message); // Show success message
+            fetchBalance(); // Refresh the balance
+        } catch (error) {
+            console.error('Error updating balance: ', error);
+            alert('Failed to update balance: ' + error.message);
+        }
+    });
+
+    // Fetch the initial balance on page load
+    fetchBalance();
+</script>
+
+</body>
+</html>
+
