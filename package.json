@@ -1,5 +1,6 @@
+cat <<EOF >package.json
 {
-  "name": "my-project",
+  "name": "metalpay",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,9 +9,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "cors": "^2.8.5"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  }
 }
+EOF

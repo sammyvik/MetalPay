@@ -1,6 +1,18 @@
+cat <<EOF >vercel.json
 {
-  "rewrites": [
-    { "source": "/api/update-balance/:userId", "destination": "/api/update-balance.js" },
-    { "source": "/api/balance/:userId", "destination": "/api/balance.js" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/index.js"
+    }
   ]
 }
+EOF
+
